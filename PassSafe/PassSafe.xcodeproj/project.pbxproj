@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F66D3285295C82D600F9B02A /* PassSafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D3284295C82D600F9B02A /* PassSafeApp.swift */; };
+		F66D3287295C82D600F9B02A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D3286295C82D600F9B02A /* ContentView.swift */; };
+		F66D3289295C82D800F9B02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66D3288295C82D800F9B02A /* Assets.xcassets */; };
+		F66D328C295C82D800F9B02A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66D328B295C82D800F9B02A /* Preview Assets.xcassets */; };
+		F66D3296295C82D800F9B02A /* PassSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D3295295C82D800F9B02A /* PassSafeTests.swift */; };
+		F66D32A0295C82D800F9B02A /* PassSafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D329F295C82D800F9B02A /* PassSafeUITests.swift */; };
+		F66D32A2295C82D800F9B02A /* PassSafeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32A1295C82D800F9B02A /* PassSafeUITestsLaunchTests.swift */; };
+		F66D32AF295C833C00F9B02A /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32AE295C833C00F9B02A /* AddItemView.swift */; };
+		F66D32B6295C834800F9B02A /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32B0295C834800F9B02A /* PasswordManager.swift */; };
+		F66D32B7295C834800F9B02A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32B1295C834800F9B02A /* Extensions.swift */; };
+		F66D32B8295C834800F9B02A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32B2295C834800F9B02A /* LoginView.swift */; };
+		F66D32B9295C834800F9B02A /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32B3295C834800F9B02A /* PasswordView.swift */; };
+		F66D32BA295C834800F9B02A /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32B4295C834800F9B02A /* PasscodeView.swift */; };
+		F66D32BB295C834800F9B02A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32B5295C834800F9B02A /* SettingsView.swift */; };
+		F66D32BE295C836200F9B02A /* RNCryptor in Frameworks */ = {isa = PBXBuildFile; productRef = F66D32BD295C836200F9B02A /* RNCryptor */; };
+		F66D32C1295C83B800F9B02A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32BF295C83B800F9B02A /* HomeView.swift */; };
+		F66D32C2295C83B800F9B02A /* PasscodeSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32C0295C83B800F9B02A /* PasscodeSetupView.swift */; };
+		F66D32C5295C853000F9B02A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F66D32C4295C853000F9B02A /* FirebaseAuth */; };
+		F66D32C7295C853000F9B02A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F66D32C6295C853000F9B02A /* FirebaseFirestore */; };
+		F66D32C9295C86B900F9B02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66D32C8295C86B900F9B02A /* LaunchScreen.storyboard */; };
+		F66D32CF295C8C4300F9B02A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32CE295C8C4300F9B02A /* RegisterView.swift */; };
+		F66D32D1295D936400F9B02A /* PasscodeResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66D32D0295D936400F9B02A /* PasscodeResetView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F66D3292295C82D800F9B02A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66D3279295C82D600F9B02A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F66D3280295C82D600F9B02A;
+			remoteInfo = PassSafe;
+		};
+		F66D329C295C82D800F9B02A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66D3279295C82D600F9B02A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F66D3280295C82D600F9B02A;
+			remoteInfo = PassSafe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F66D3281295C82D600F9B02A /* PassSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66D3284295C82D600F9B02A /* PassSafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassSafeApp.swift; sourceTree = "<group>"; };
+		F66D3286295C82D600F9B02A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F66D3288295C82D800F9B02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F66D328B295C82D800F9B02A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F66D3291295C82D800F9B02A /* PassSafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassSafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66D3295295C82D800F9B02A /* PassSafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassSafeTests.swift; sourceTree = "<group>"; };
+		F66D329B295C82D800F9B02A /* PassSafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassSafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66D329F295C82D800F9B02A /* PassSafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassSafeUITests.swift; sourceTree = "<group>"; };
+		F66D32A1295C82D800F9B02A /* PassSafeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassSafeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F66D32AE295C833C00F9B02A /* AddItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		F66D32B0295C834800F9B02A /* PasswordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
+		F66D32B1295C834800F9B02A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F66D32B2295C834800F9B02A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F66D32B3295C834800F9B02A /* PasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		F66D32B4295C834800F9B02A /* PasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		F66D32B5295C834800F9B02A /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F66D32BF295C83B800F9B02A /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F66D32C0295C83B800F9B02A /* PasscodeSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeSetupView.swift; sourceTree = "<group>"; };
+		F66D32C8295C86B900F9B02A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		F66D32CE295C8C4300F9B02A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F66D32D0295D936400F9B02A /* PasscodeResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeResetView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F66D327E295C82D600F9B02A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66D32BE295C836200F9B02A /* RNCryptor in Frameworks */,
+				F66D32C5295C853000F9B02A /* FirebaseAuth in Frameworks */,
+				F66D32C7295C853000F9B02A /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66D328E295C82D800F9B02A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66D3298295C82D800F9B02A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F66D3278295C82D600F9B02A = {
+			isa = PBXGroup;
+			children = (
+				F66D3283295C82D600F9B02A /* PassSafe */,
+				F66D3294295C82D800F9B02A /* PassSafeTests */,
+				F66D329E295C82D800F9B02A /* PassSafeUITests */,
+				F66D3282295C82D600F9B02A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F66D3282295C82D600F9B02A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F66D3281295C82D600F9B02A /* PassSafe.app */,
+				F66D3291295C82D800F9B02A /* PassSafeTests.xctest */,
+				F66D329B295C82D800F9B02A /* PassSafeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F66D3283295C82D600F9B02A /* PassSafe */ = {
+			isa = PBXGroup;
+			children = (
+				F66D3284295C82D600F9B02A /* PassSafeApp.swift */,
+				F66D32CE295C8C4300F9B02A /* RegisterView.swift */,
+				F66D3286295C82D600F9B02A /* ContentView.swift */,
+				F66D32AE295C833C00F9B02A /* AddItemView.swift */,
+				F66D32B1295C834800F9B02A /* Extensions.swift */,
+				F66D32B2295C834800F9B02A /* LoginView.swift */,
+				F66D32C8295C86B900F9B02A /* LaunchScreen.storyboard */,
+				F66D32B4295C834800F9B02A /* PasscodeView.swift */,
+				F66D32B0295C834800F9B02A /* PasswordManager.swift */,
+				F66D32B3295C834800F9B02A /* PasswordView.swift */,
+				F66D32B5295C834800F9B02A /* SettingsView.swift */,
+				F66D32BF295C83B800F9B02A /* HomeView.swift */,
+				F66D32C0295C83B800F9B02A /* PasscodeSetupView.swift */,
+				F66D32D0295D936400F9B02A /* PasscodeResetView.swift */,
+				F66D3288295C82D800F9B02A /* Assets.xcassets */,
+				F66D328A295C82D800F9B02A /* Preview Content */,
+			);
+			path = PassSafe;
+			sourceTree = "<group>";
+		};
+		F66D328A295C82D800F9B02A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F66D328B295C82D800F9B02A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F66D3294295C82D800F9B02A /* PassSafeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F66D3295295C82D800F9B02A /* PassSafeTests.swift */,
+			);
+			path = PassSafeTests;
+			sourceTree = "<group>";
+		};
+		F66D329E295C82D800F9B02A /* PassSafeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F66D329F295C82D800F9B02A /* PassSafeUITests.swift */,
+				F66D32A1295C82D800F9B02A /* PassSafeUITestsLaunchTests.swift */,
+			);
+			path = PassSafeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F66D3280295C82D600F9B02A /* PassSafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66D32A5295C82D800F9B02A /* Build configuration list for PBXNativeTarget "PassSafe" */;
+			buildPhases = (
+				F66D327D295C82D600F9B02A /* Sources */,
+				F66D327E295C82D600F9B02A /* Frameworks */,
+				F66D327F295C82D600F9B02A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassSafe;
+			packageProductDependencies = (
+				F66D32BD295C836200F9B02A /* RNCryptor */,
+				F66D32C4295C853000F9B02A /* FirebaseAuth */,
+				F66D32C6295C853000F9B02A /* FirebaseFirestore */,
+			);
+			productName = PassSafe;
+			productReference = F66D3281295C82D600F9B02A /* PassSafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F66D3290295C82D800F9B02A /* PassSafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66D32A8295C82D800F9B02A /* Build configuration list for PBXNativeTarget "PassSafeTests" */;
+			buildPhases = (
+				F66D328D295C82D800F9B02A /* Sources */,
+				F66D328E295C82D800F9B02A /* Frameworks */,
+				F66D328F295C82D800F9B02A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F66D3293295C82D800F9B02A /* PBXTargetDependency */,
+			);
+			name = PassSafeTests;
+			productName = PassSafeTests;
+			productReference = F66D3291295C82D800F9B02A /* PassSafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F66D329A295C82D800F9B02A /* PassSafeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66D32AB295C82D800F9B02A /* Build configuration list for PBXNativeTarget "PassSafeUITests" */;
+			buildPhases = (
+				F66D3297295C82D800F9B02A /* Sources */,
+				F66D3298295C82D800F9B02A /* Frameworks */,
+				F66D3299295C82D800F9B02A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F66D329D295C82D800F9B02A /* PBXTargetDependency */,
+			);
+			name = PassSafeUITests;
+			productName = PassSafeUITests;
+			productReference = F66D329B295C82D800F9B02A /* PassSafeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F66D3279295C82D600F9B02A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F66D3280295C82D600F9B02A = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					F66D3290295C82D800F9B02A = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F66D3280295C82D600F9B02A;
+					};
+					F66D329A295C82D800F9B02A = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F66D3280295C82D600F9B02A;
+					};
+				};
+			};
+			buildConfigurationList = F66D327C295C82D600F9B02A /* Build configuration list for PBXProject "PassSafe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F66D3278295C82D600F9B02A;
+			packageReferences = (
+				F66D32BC295C836200F9B02A /* XCRemoteSwiftPackageReference "RNCryptor" */,
+				F66D32C3295C853000F9B02A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F66D3282295C82D600F9B02A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F66D3280295C82D600F9B02A /* PassSafe */,
+				F66D3290295C82D800F9B02A /* PassSafeTests */,
+				F66D329A295C82D800F9B02A /* PassSafeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F66D327F295C82D600F9B02A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66D32C9295C86B900F9B02A /* LaunchScreen.storyboard in Resources */,
+				F66D328C295C82D800F9B02A /* Preview Assets.xcassets in Resources */,
+				F66D3289295C82D800F9B02A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66D328F295C82D800F9B02A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66D3299295C82D800F9B02A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F66D327D295C82D600F9B02A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66D32B8295C834800F9B02A /* LoginView.swift in Sources */,
+				F66D32B9295C834800F9B02A /* PasswordView.swift in Sources */,
+				F66D32BA295C834800F9B02A /* PasscodeView.swift in Sources */,
+				F66D32C1295C83B800F9B02A /* HomeView.swift in Sources */,
+				F66D32BB295C834800F9B02A /* SettingsView.swift in Sources */,
+				F66D32B7295C834800F9B02A /* Extensions.swift in Sources */,
+				F66D3287295C82D600F9B02A /* ContentView.swift in Sources */,
+				F66D32AF295C833C00F9B02A /* AddItemView.swift in Sources */,
+				F66D32B6295C834800F9B02A /* PasswordManager.swift in Sources */,
+				F66D32CF295C8C4300F9B02A /* RegisterView.swift in Sources */,
+				F66D32D1295D936400F9B02A /* PasscodeResetView.swift in Sources */,
+				F66D3285295C82D600F9B02A /* PassSafeApp.swift in Sources */,
+				F66D32C2295C83B800F9B02A /* PasscodeSetupView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66D328D295C82D800F9B02A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66D3296295C82D800F9B02A /* PassSafeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66D3297295C82D800F9B02A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66D32A2295C82D800F9B02A /* PassSafeUITestsLaunchTests.swift in Sources */,
+				F66D32A0295C82D800F9B02A /* PassSafeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F66D3293295C82D800F9B02A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F66D3280295C82D600F9B02A /* PassSafe */;
+			targetProxy = F66D3292295C82D800F9B02A /* PBXContainerItemProxy */;
+		};
+		F66D329D295C82D800F9B02A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F66D3280295C82D600F9B02A /* PassSafe */;
+			targetProxy = F66D329C295C82D800F9B02A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F66D32A3295C82D800F9B02A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F66D32A4295C82D800F9B02A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F66D32A6295C82D800F9B02A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PassSafe/Preview Content\"";
+				DEVELOPMENT_TEAM = 5L4PHUX6F7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "PassSafe - Password Manager";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need access to Face ID so we can make sure it's you we're showing your passwords to.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.hamdivazim.PassSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F66D32A7295C82D800F9B02A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PassSafe/Preview Content\"";
+				DEVELOPMENT_TEAM = 5L4PHUX6F7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "PassSafe - Password Manager";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need access to Face ID so we can make sure it's you we're showing your passwords to.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.hamdivazim.PassSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F66D32A9295C82D800F9B02A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5L4PHUX6F7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.hamdivazim.PassSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassSafe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PassSafe";
+			};
+			name = Debug;
+		};
+		F66D32AA295C82D800F9B02A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5L4PHUX6F7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.hamdivazim.PassSafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassSafe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PassSafe";
+			};
+			name = Release;
+		};
+		F66D32AC295C82D800F9B02A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5L4PHUX6F7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.hamdivazim.PassSafeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassSafe;
+			};
+			name = Debug;
+		};
+		F66D32AD295C82D800F9B02A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5L4PHUX6F7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.hamdivazim.PassSafeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassSafe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F66D327C295C82D600F9B02A /* Build configuration list for PBXProject "PassSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66D32A3295C82D800F9B02A /* Debug */,
+				F66D32A4295C82D800F9B02A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66D32A5295C82D800F9B02A /* Build configuration list for PBXNativeTarget "PassSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66D32A6295C82D800F9B02A /* Debug */,
+				F66D32A7295C82D800F9B02A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66D32A8295C82D800F9B02A /* Build configuration list for PBXNativeTarget "PassSafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66D32A9295C82D800F9B02A /* Debug */,
+				F66D32AA295C82D800F9B02A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66D32AB295C82D800F9B02A /* Build configuration list for PBXNativeTarget "PassSafeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66D32AC295C82D800F9B02A /* Debug */,
+				F66D32AD295C82D800F9B02A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F66D32BC295C836200F9B02A /* XCRemoteSwiftPackageReference "RNCryptor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RNCryptor/RNCryptor.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F66D32C3295C853000F9B02A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F66D32BD295C836200F9B02A /* RNCryptor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F66D32BC295C836200F9B02A /* XCRemoteSwiftPackageReference "RNCryptor" */;
+			productName = RNCryptor;
+		};
+		F66D32C4295C853000F9B02A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F66D32C3295C853000F9B02A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F66D32C6295C853000F9B02A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F66D32C3295C853000F9B02A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F66D3279295C82D600F9B02A /* Project object */;
+}
