@@ -2,6 +2,8 @@
 
 <img align="right" height="256" src="https://raw.githubusercontent.com/hamdivazim/PassSafe/main/PassSafe/PassSafe/AppIcon.png"/>
 
+[![Current version: 0.1]](https://hamdivazim.github.io/PassSafeChangelog/)
+
 PassSafe is a password manager for iOS made by Hamdi Vazim.
 <br><br>
 **NOTE:** the app will _not_ work without `GoogleService-Info.plist` in the root of the Xcode workspace. You will need to create your own Firebase project with Authentication and Firestore enabled and use its config file if you would like to try the app out.
