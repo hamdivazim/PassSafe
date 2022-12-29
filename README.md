@@ -2,7 +2,7 @@
 
 <img align="right" height="256" src="https://raw.githubusercontent.com/hamdivazim/PassSafe/main/PassSafe/PassSafe/AppIcon.png"/>
 
-[![Current version: 0.1]](https://hamdivazim.github.io/PassSafeChangelog/)
+[[Current version: 0.1]](https://hamdivazim.github.io/PassSafeChangelog/)
 
 PassSafe is a password manager for iOS made by Hamdi Vazim.
 <br><br>
