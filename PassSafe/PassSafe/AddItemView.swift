@@ -15,6 +15,7 @@ struct AddItemView: View {
     @State var password = ""
     
     @State var showAlert = false
+    @State var alertMessage = ""
     
     var body: some View {
         VStack {
@@ -47,9 +48,15 @@ struct AddItemView: View {
             
             Button {
                 if website.isValidURL {
-                    passwordManager.addItem(website, password)
-                    popupState.toggle()
+                    if !passwordManager.websites.contains(website) {
+                        passwordManager.addItem(website, password)
+                        popupState.toggle()
+                    } else {
+                        alertMessage = "You already have an entry with this website."
+                        showAlert = true
+                    }
                 } else {
+                    alertMessage = "The website is not a valid URL."
                     showAlert = true
                 }
             } label: {
@@ -65,7 +72,7 @@ struct AddItemView: View {
                     .padding(.vertical)
             }
             .alert(isPresented: $showAlert) {
-                Alert(title: Text("Error"), message: Text("The website is not a valid URL."), dismissButton: .default(Text("Ok")))
+                Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("Ok")))
             }
             
             Spacer()
@@ -123,6 +130,7 @@ struct BoxField: View {
                     .padding()
                     .keyboardType(keyboardType ?? .default)
                     .autocapitalization(.none)
+                    .autocorrectionDisabled(true)
             }
         }
     }

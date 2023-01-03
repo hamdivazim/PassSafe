@@ -16,49 +16,83 @@ struct LoginView: View {
     @State var password = ""
     
     @State var showLogin = true
+    @State var showPasswordReset = false
+    
+    @AppStorage("signedInEmail") var signedInEmail = ""
+    @AppStorage("signedInPassword") var signedInPassword = ""
     
     var body: some View {
         if showLogin {
-            NavigationStack {
+            if !(signedInEmail == "") && !passwordManager.showFirebaseAlert {
                 VStack {
-                    Spacer()
-                    
-                    FocusField(text: $email, placeholder: "Email", keyboardType: .emailAddress)
-                    FocusField(text: $password, isSecure: true, placeholder: "Password", keyboardType: .default)
-                    
-                    if passwordManager.isLoading {
-                        ProgressView()
-                            .padding()
-                    } else {
-                        Button {
-                            passwordManager.login(email, password)
-                            
-                        } label: {
-                            Text("Sign In")
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                                .padding(.vertical, 12)
-                                .frame(maxWidth: .infinity)
-                                .background {
-                                    RoundedRectangle(cornerRadius: 6, style: .continuous)
-                                        .fill(.blue)
-                                }
-                                .padding(.vertical)
-                        }
-                        .disableWithOpacity(email == "" || password == "")
-                    }
-                    
-                    Spacer()
-                    
-                    HStack {
-                        Text("Don't have an account?")
-                        Button("Register now!") {
-                            showLogin = false
-                        }
-                    }
+                    ProgressView()
+                        .padding()
+                    Text("Signing In ...")
+                        .font(.headline.bold())
                 }
                 .padding()
-                .navigationTitle("Login")
+            } else {
+                NavigationStack {
+                    VStack {
+                        FocusField(text: $email, placeholder: "Email", keyboardType: .emailAddress)
+                        FocusField(text: $password, isSecure: true, placeholder: "Password", keyboardType: .default)
+                        
+                        if passwordManager.isLoading {
+                            ProgressView()
+                                .padding()
+                        } else {
+                            Button {
+                                passwordManager.login(email, password)
+                                
+                            } label: {
+                                Text("Sign In")
+                                    .wideButton()
+                            }
+                            .disableWithOpacity(email == "" || password == "")
+                            .alert(isPresented: $passwordManager.showFirebaseAlert) {
+                                Alert(title: Text("Error"), message: Text(passwordManager.errorMessage), dismissButton: .default(Text("Ok"), action: {
+                                    signedInEmail = ""
+                                    signedInPassword = ""
+                                }))
+                            }
+                        }
+                        
+                        // coming soon
+                        
+//                        if passwordManager.isLoading {
+//                            ProgressView()
+//                                .padding()
+//                        } else {
+//                            GoogleSignInButton()
+//                                .frame(height: 50)
+//                                .onTapGesture {
+//                                    passwordManager.signInWithGoogle()
+//                                }
+//                                .alert(isPresented: $passwordManager.showFirebaseAlert) {
+//                                    Alert(title: Text("Error"), message: Text(passwordManager.errorMessage), dismissButton: .default(Text("Ok")))
+//                                }
+//                        }
+                        
+                        Spacer()
+                        
+                        HStack {
+                            Text("Don't have an account?")
+                            Button("Register now!") {
+                                showLogin = false
+                            }
+                        }
+                        
+                        Button("Forgotten your password?") {
+                            showPasswordReset = true
+                        }
+                    }
+                    .padding()
+                    .navigationTitle("Login")
+                }
+                .popover(isPresented: $showPasswordReset) {
+                    PasswordResetView(showPopup: $showPasswordReset)
+                        .environmentObject(passwordManager)
+                }
             }
         } else {
             RegisterView(showLogin: $showLogin)
@@ -87,11 +121,13 @@ struct FocusField: View {
                 SecureField(placeholder, text: $text)
                     .padding()
                     .focused($isKeyboardShowing)
+                    .textInputAutocapitalization(.never)
             } else {
                 TextField(placeholder, text: $text)
                     .keyboardType(keyboardType)
                     .padding()
                     .focused($isKeyboardShowing)
+                    .textInputAutocapitalization(.never)
             }
         }
         .frame(maxWidth: .infinity)

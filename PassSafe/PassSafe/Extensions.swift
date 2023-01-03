@@ -19,11 +19,24 @@ extension View {
     }
     
     func disableWithOpacity(_ condition: Bool) -> some View {
-        // Disables the view with opacity.
+        /// Disables the view with opacity.
         
         self
             .disabled(condition)
             .opacity(condition ? 0.6 : 1)
+    }
+    
+    func wideButton() -> some View {
+        self
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+            .padding(.vertical, 12)
+            .frame(maxWidth: .infinity)
+            .background {
+                RoundedRectangle(cornerRadius: 6, style: .continuous)
+                    .fill(.blue)
+            }
+            .padding(.vertical)
     }
 }
 

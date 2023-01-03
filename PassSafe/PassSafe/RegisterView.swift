@@ -42,6 +42,9 @@ struct RegisterView: View {
                             .padding(.vertical)
                     }
                     .disableWithOpacity(email == "" || password == "")
+                    .alert(isPresented: $passwordManager.showFirebaseAlert) {
+                        Alert(title: Text("Error"), message: Text(passwordManager.errorMessage), dismissButton: .default(Text("Ok")))
+                    }
                 }
                 
                 Spacer()

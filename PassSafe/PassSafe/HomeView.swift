@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     @State var searchText = ""
-    
     @State var showAddItem = false
+    @State var showPrivacyNotice = false
     
     @AppStorage("setPasscode") private var passcode = ""
     
@@ -74,6 +74,14 @@ struct HomeView: View {
                                 Label("Settings", systemImage: "gear")
                             }
                             
+                            Button {
+                                showPrivacyNotice = true
+                            } label: {
+                                Label("Privacy Notice", systemImage: "hand.raised.fill")
+                            }
+                            
+                            Divider()
+                            
                             Button(role: .destructive) {
                                 passwordManager.signOut()
                                 passwordManager.signedIn = false
@@ -81,6 +89,8 @@ struct HomeView: View {
                             } label: {
                                 Label("Sign Out", systemImage: "gear")
                             }
+                            
+                            
                         } label: {
                             Label("Account Settings", systemImage: "person.crop.circle.fill")
                                 .foregroundColor(.gray)
@@ -99,6 +109,7 @@ struct HomeView: View {
             .popover(isPresented: $showAddItem) {
                 AddItemView(popupState: $showAddItem).environmentObject(passwordManager)
             }
+            .popover(isPresented: $showPrivacyNotice) { PrivacyNoticeView(showPopup: $showPrivacyNotice) }
             
             if passcode == "" {
                 PasscodeSetupView()
