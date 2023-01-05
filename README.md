@@ -15,3 +15,6 @@ Further into development, I may allow a couple of contributors to commit to Pass
 
 ## License
 PassSafe uses the Apache-2.0 license.
+
+## Browse
+[Browse v0.1](https://github.com/hamdivazim/PassSafe/tree/v0.1.0-alpha)
