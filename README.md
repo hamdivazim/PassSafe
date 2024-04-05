@@ -4,7 +4,7 @@
 
 View [Releases](https://github.com/hamdivazim/PassSafe/releases)
 
-PassSafe is a password manager for iOS made by Hamdi Vazim.
+PassSafe is a password manager for iOS made by Hamd Waseem.
 <br><br>
 **NOTE:** the app will _not_ work without `GoogleService-Info.plist` in the root of the Xcode workspace. You will need to create your own Firebase project with Authentication and Firestore enabled and use its config file if you would like to try the app out. [Learn _how_ to do that here.](https://hamdivazim.github.io/tutor3)
 
